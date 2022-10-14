@@ -56,13 +56,15 @@ body{
 .contenedor-compra{
     margin-top: 1rem;
     display: grid;
+    
     gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(190px, 5fr));
     
 }
 .card {
-    
+    width: 190px;
     margin-bottom: 2rem;
+    margin: 1rem;
     text-align: center;
     display: inline-block;
     border: solid 5px #FA824C;
@@ -70,6 +72,7 @@ body{
     color: #342e37;
     overflow: hidden;
     outline: 5px solid #342e37;
+
    
 }
 .card select{
@@ -88,7 +91,8 @@ body{
     border-radius: 10px;
     color: #342e37;
     overflow: hidden;
-    outline: 2px solid #342e37
+    outline: 2px solid #342e37;
+    grid-template-columns: max-content ;
    
 }
 .ver-clima {
@@ -337,4 +341,8 @@ tr:hover{
   }
  #btn-fin.btn-comprar:hover{
   background-color: #9FD356;
+ }
+ #mapa{
+  width: 200px;
+  height: 100px;
  }
